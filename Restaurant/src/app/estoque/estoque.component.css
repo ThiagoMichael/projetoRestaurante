@@ -1,0 +1,122 @@
+@charset "UTF-08";
+
+main {
+
+  height: 100%;
+  min-height: 545px;
+  width: 375px;
+
+  background-color: #E6E6E6;
+  text-align: center;
+
+}
+
+div.grid-pesquisa {
+
+  display: grid;
+
+  grid-template-columns: 50px 50px;
+  column-gap: 0px;
+
+}
+
+div.grid-pesquisa > p {
+
+  padding-top: 6px;
+  font-size: 20px;
+  color: #707070;
+
+}
+
+div.grid-nav {
+
+  display: grid;
+
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 3px;
+
+}
+
+div.grande {
+
+  background-color: white;
+  width: 158px;
+  height: 40px;
+
+  border-radius: 15px;
+  border: 1px solid #707070;
+
+  text-align: left;
+
+}
+
+div.pequena {
+
+  background-color: white;
+  width: 43px;
+  height: 41px;
+
+  border-radius: 15px;
+  border: 1px solid #707070;
+
+}
+
+table.tabela {
+
+  width: 350px;
+  height: 130px;
+
+  border: 2px solid #707070;
+  border-radius: 10px;
+
+}
+
+section {
+
+  background-color: #093902;
+  border-radius: 5px;
+  width: 350px;
+
+  margin-top: 15px;
+
+}
+
+table, th {
+
+  width: 350px;
+
+}
+
+th {
+
+  background-color: #0D4E03;
+  color: white;
+
+}
+
+#canto {
+
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+td {
+
+  background-color: white;
+
+}
+
+#canto-esquerdo {
+
+  border-radius: 0px 0px 0px 5px;
+
+}
+
+#canto-direito {
+
+  border-radius: 0px 0px 5px 0px;
+
+}
+
+

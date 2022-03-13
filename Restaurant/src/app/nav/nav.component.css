@@ -1,0 +1,27 @@
+@charset "UTF-08";
+
+nav {
+
+  position: sticky;
+  bottom: 0;
+
+  height: 65px;
+  width: 375px;
+
+  border-top: 2px solid #707070;
+  background-color: #f8f8f8;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+div.grid-icones {
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  color: #707070;
+
+}
