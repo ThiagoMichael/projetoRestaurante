@@ -65,55 +65,47 @@ div.pequena {
 table.tabela {
 
   width: 350px;
-  height: 130px;
-
-  border: 2px solid #707070;
-  border-radius: 10px;
+  height: 60px;
 
 }
 
-section {
+section.produto {
 
   background-color: #093902;
-  border-radius: 5px;
   width: 350px;
+  border-radius: 5px;
 
   margin-top: 15px;
 
 }
 
-table, th {
+th.cabecalho {
 
   width: 350px;
-
-}
-
-th {
-
   background-color: #0D4E03;
   color: white;
 
 }
 
-#canto {
+th#canto {
 
   border-radius: 5px 5px 0px 0px;
 
 }
 
-td {
+td.conteudo {
 
   background-color: white;
 
 }
 
-#canto-esquerdo {
+td#canto-esquerdo {
 
   border-radius: 0px 0px 0px 5px;
 
 }
 
-#canto-direito {
+td#canto-direito {
 
   border-radius: 0px 0px 5px 0px;
 
