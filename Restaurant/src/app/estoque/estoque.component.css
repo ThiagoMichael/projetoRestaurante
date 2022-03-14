@@ -34,7 +34,7 @@ div.grid-nav {
 
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 3px;
+  column-gap: 5px;
 
 }
 
@@ -45,24 +45,41 @@ div.grande {
   height: 40px;
 
   border-radius: 15px;
-  border: 1px solid #707070;
+  border: 2px solid #707070;
 
   text-align: left;
 
 }
 
-div.pequena {
+button.botao-pequeno{
 
   background-color: white;
   width: 43px;
   height: 41px;
-
-  border-radius: 15px;
-  border: 1px solid #707070;
+  border-radius: 10px;
+  border: 2px solid #707070;
 
 }
 
-table.tabela {
+.botao-pequeno:hover {
+
+  background-color: #ebebeb;
+  transition-duration: 0.4s;
+  border-color: #00CC00;
+  cursor: pointer;
+
+}
+
+.botao-pequeno:hover #reducedIcon{
+
+  color: #00CC00;
+  transition-duration: 0.4s;
+
+}
+
+.botao-pequeno:active { background-color: #b9b9b9; }
+
+.tabela {
 
   width: 350px;
   height: 60px;
@@ -87,28 +104,12 @@ th.cabecalho {
 
 }
 
-th#canto {
+th#canto { border-radius: 5px 5px 0px 0px; }
 
-  border-radius: 5px 5px 0px 0px;
+td.conteudo { background-color: white; }
 
-}
+td#canto-esquerdo { border-radius: 0px 0px 0px 5px; }
 
-td.conteudo {
-
-  background-color: white;
-
-}
-
-td#canto-esquerdo {
-
-  border-radius: 0px 0px 0px 5px;
-
-}
-
-td#canto-direito {
-
-  border-radius: 0px 0px 5px 0px;
-
-}
+td#canto-direito { border-radius: 0px 0px 5px 0px; }
 
 
