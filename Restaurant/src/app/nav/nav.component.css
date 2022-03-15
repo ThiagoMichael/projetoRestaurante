@@ -40,6 +40,16 @@ button.botao-menu {
 
 }
 
-.botao-menu:hover #defaultIcon { color: #00CC00; }
+.botao-menu:hover #defaultIcon {
 
-.botao-menu:hover p { color: #00CC00; }
+  color: #00CC00;
+  transition-duration: 0.4s;
+
+}
+
+.botao-menu:hover p {
+
+  color: #00CC00;
+  transition-duration: 0.4s;
+
+}
