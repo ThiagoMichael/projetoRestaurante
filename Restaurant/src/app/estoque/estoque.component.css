@@ -1,11 +1,8 @@
-@charset "UTF-08";
-
 main {
 
   height: 100%;
   min-height: 545px;
   width: 375px;
-
   background-color: #E6E6E6;
   text-align: center;
 
@@ -113,5 +110,3 @@ td.conteudo { background-color: white; }
 td#canto-esquerdo { border-radius: 0px 0px 0px 5px; }
 
 td#canto-direito { border-radius: 0px 0px 5px 0px; }
-
-

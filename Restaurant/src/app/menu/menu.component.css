@@ -1,10 +1,7 @@
-@charset "UTF-08";
-
 header {
 
   position: sticky;
-  top: 0px;
-  bottom: 0px;
+  top: 0;
 
   height: 65px;
   width: 375px;
