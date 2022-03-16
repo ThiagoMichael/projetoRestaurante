@@ -1,6 +1,7 @@
 section {
 
   display: none;
+  transition-duration: 0.4s;
 
 }
 
@@ -13,11 +14,11 @@ div.fundo-blur {
   background-color: white;
   opacity: 75%;
   width: 375px;
-  height: 667px;
+  height: 100%;
 
 }
 
-div.form-adicionar {
+div.janela-adicionar {
 
   position: absolute;
 	top: 50%;
@@ -39,6 +40,7 @@ h1.titulo {
   padding-top: 30px;
   text-align: center;
   font-weight: bold;
+  font-size: 30px;
 
 }
 
@@ -47,5 +49,69 @@ p.info {
   color:#707070;
   text-align: center;
   padding: 8px 40px 10px 40px;
+
+}
+
+div.form-adicionar {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 326px;
+  height: 260px;
+  background-color: white;
+  border: 2px solid #0D4E03;
+  border-radius: 10px;
+
+}
+
+div > label {
+
+  color: #707070;
+  font-size: 18px;
+
+}
+
+input, select {
+
+  border: 2px solid #707070;
+  border-radius: 15px;
+  padding-left: 15px;
+  height: 20px;
+
+}
+
+#nomeP { width: 200px; margin-left: 30px; }
+
+#desP { width: 180px;  margin-left: 20px;}
+
+#generoP { width: 135px; margin-left: 100px; }
+
+#quantP { width: 80px; margin-left: 95px; }
+
+#dataP { width: 150px; margin-left: 50px; }
+
+button.btn-confirmar {
+
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-color: #00CC00;
+  border: 2px solid #0D4E03;
+  border-radius: 5px;
+  margin-top: 35px;
+  width: 135px;
+  height: 35px;
+
+}
+
+.btn-confirmar:hover { background-color: #00aa00; }
+
+
+.btn-confirmar:active {
+
+  background-color: #b9b9b9;
+  border-color: #707070;
 
 }

@@ -1,10 +1,32 @@
 <section>
   <div class="fundo-blur"></div>
-      <div class="form-adicionar">
+      <div class="janela-adicionar">
       <h1 class="titulo">Adicionar</h1>
       <p class="info">Preencha os campos abaixo para adicionar um novo produto.</p>
       <form action="">
-        <div></div>
+        <div class="form-adicionar">
+          <div>
+            <label for="nomeP">Nome:</label>
+            <input type="text" name="nome" id="nomeP">
+          </div>
+          <div>
+            <label for="desP">Descrição:</label>
+            <input type="text" name="descricao" id="desP">
+          </div>
+          <div>
+            <label for="generoP">Gênero:</label>
+            <select name="genero" id="generoP"></select>
+          </div>
+          <div>
+            <label for="quantP">Quantidade:</label>
+            <input type="number" name="quantidade" id="quantP">
+          </div>
+          <div>
+            <label for="dataP">Validade:</label>
+            <input type="date" name="dataValidade" id="dataP">
+          </div>
+        </div>
+        <button class="btn-confirmar">Ok</button>
       </form>
   </div>
 </section>
