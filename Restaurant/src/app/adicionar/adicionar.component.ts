@@ -8,8 +8,8 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 export class AdicionarComponent {
 
   @Input () exibir: boolean = true
-
   @Output() aoAdicionar = new EventEmitter<object>();
+  @Output() aoFinalizar = new EventEmitter<boolean>();
 
   nome: String = '';
   descricao: String = '';
@@ -19,7 +19,6 @@ export class AdicionarComponent {
 
   adicionar (): void {
 
-    console.log("Produto adicionado!");
     this.aoAdicionar.emit({
 
       nome: this.nome,
@@ -31,7 +30,7 @@ export class AdicionarComponent {
     });
 
     this.limparCampos();
-    this.exibir = true;
+    this.aoFinalizar.emit(true);
 
   }
 

@@ -1,4 +1,3 @@
-import { AdicionarComponent } from './adicionar/adicionar.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -14,15 +13,13 @@ export class AppComponent {
 
   adicionarProduto($event: object): void {
 
-    console.log($event);
     const produto = {...$event};
     this.produtos.push(produto);
 
   }
 
-  exibirAdicionar ($event: any): void {
+  exibirAdicionar ($event: boolean): void {
 
-    console.log($event);
     this.exibir = $event;
 
   }

@@ -17,25 +17,29 @@
     </div>
   </nav>
   <section class="produto" *ngFor="let produto of produtos">
-      <table class="tabela">
-        <thead>
-          <th class="cabecalho" id="canto">Nome do produto</th>
-        </thead>
-        <tbody>
-          <td class="conteudo">{{produto?.nome}}</td>
-        </tbody>
-      </table>
-      <table class="tabela">
-        <thead>
-          <th class="cabecalho">Quantidade</th>
-          <th class="cabecalho">Gênero</th>
-          <th class="cabecalho">Validade</th>
-        </thead>
-        <tbody>
-          <td class="conteudo" id="canto-esquerdo">{{produto?.quantidade}}</td>
-          <td class="conteudo">{{produto?.genero}}</td>
-          <td class="conteudo" id="canto-direito">{{produto?.validade | date: 'shortDate'}}</td>
-        </tbody>
-      </table>
+        <table class="tabela">
+          <thead>
+            <th class="cabecalho" id="canto">Nome do produto</th>
+          </thead>
+          <tbody>
+            <td class="conteudo">{{produto?.nome}}</td>
+          </tbody>
+        </table>
+        <table class="tabela">
+          <thead>
+            <th class="cabecalho">Quantidade</th>
+            <th class="cabecalho">Gênero</th>
+            <th class="cabecalho">Validade</th>
+          </thead>
+          <tbody>
+            <td class="conteudo" id="canto-esquerdo">{{produto?.quantidade}}</td>
+            <td class="conteudo">{{produto?.genero}}</td>
+            <td class="conteudo" id="canto-direito">{{produto?.validade | date: 'shortDate'}}</td>
+          </tbody>
+        </table>
   </section>
 </main>
+
+<ng-template #listaVazia>
+  <p>funciona</p>
+</ng-template>
