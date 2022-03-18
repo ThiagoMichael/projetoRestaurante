@@ -7,7 +7,7 @@ import { EstoqueComponent } from './estoque/estoque.component';
 import { NavComponent } from './nav/nav.component';
 import { AdicionarComponent } from './adicionar/adicionar.component';
 import { AlterarComponent } from './alterar/alterar.component';
-import { BlurComponent } from './blur/blur.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +16,11 @@ import { BlurComponent } from './blur/blur.component';
     EstoqueComponent,
     NavComponent,
     AdicionarComponent,
-    AlterarComponent,
-    BlurComponent
+    AlterarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

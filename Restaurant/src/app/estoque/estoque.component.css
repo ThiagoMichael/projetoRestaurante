@@ -63,7 +63,7 @@ button.botao-pequeno{
 .botao-pequeno:hover {
 
   background-color: #ebebeb;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   border-color: #00CC00;
   cursor: pointer;
 

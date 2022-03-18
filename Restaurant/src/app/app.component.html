@@ -1,6 +1,5 @@
 <app-menu></app-menu>
-<app-estoque></app-estoque>
+<app-estoque [produtos] = "produtos" (aoExibirAdd)="exibirAdicionar($event)"></app-estoque>
 <app-nav></app-nav>
-<app-blur></app-blur>
-<app-adicionar></app-adicionar>
+<app-adicionar [exibir] = "exibir" (aoAdicionar)="adicionarProduto($event)"></app-adicionar>
 <app-alterar></app-alterar>

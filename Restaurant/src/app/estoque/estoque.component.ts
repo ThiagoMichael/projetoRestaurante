@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-estoque',
   templateUrl: './estoque.component.html',
   styleUrls: ['./estoque.component.css']
 })
-export class EstoqueComponent implements OnInit {
+export class EstoqueComponent {
 
-  constructor() { }
+  @Output() aoExibirAdd = new EventEmitter<boolean>();
 
-  ngOnInit(): void {
+  @Input () produtos: any[] = [];
+
+  exibirAdicionar (): void {
+
+    this.aoExibirAdd.emit(false);
+
   }
 
 }

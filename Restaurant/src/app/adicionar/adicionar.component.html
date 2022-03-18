@@ -1,24 +1,25 @@
-<section>
+<section id="janela" [hidden]="exibir">
+  <div class="fundo-blur"></div>
   <div class="janela-adicionar">
     <h1 class="titulo">Adicionar</h1>
     <p class="info">Preencha os campos abaixo para adicionar um novo produto.</p>
-      <form action="">
+      <form class="formulario" (ngSubmit)="adicionar()">
         <div class="form-adicionar">
             <label for="nomeP">Nome:</label>
-            <input type="text" name="nome" id="nomeP">
+            <input type="text" name="nome" id="nomeP" [(ngModel)]="nome">
             <label for="desP">Descrição:</label>
-            <input type="text" name="descricao" id="desP">
+            <input type="text" name="descricao" id="desP" [(ngModel)]="descricao">
             <label for="generoP">Gênero:</label>
-            <select name="genero" id="generoP">
+            <select name="genero" id="generoP" [(ngModel)]="genero">
               <option value="void"></option>
-              <option value="laticinios">Laticínios</option>
+              <option value="Laticinios">Laticínios</option>
             </select>
             <label for="quantP">Quantidade:</label>
-            <input type="number" name="quantidade" id="quantP">
+            <input type="number" name="quantidade" id="quantP" [(ngModel)]="quantidade">
             <label for="dataP">Validade:</label>
-            <input type="date" name="dataValidade" id="dataP">
+            <input type="date" name="dataValidade" id="dataP" [(ngModel)]="validade">
         </div>
-        <button class="btn-confirmar">Ok</button>
+        <button class="btn-confirmar" type="submit">Ok</button>
       </form>
   </div>
 </section>
