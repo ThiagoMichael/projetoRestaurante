@@ -6,6 +6,8 @@ import { MenuComponent } from './menu/menu.component';
 import { EstoqueComponent } from './estoque/estoque.component';
 import { NavComponent } from './nav/nav.component';
 import { AdicionarComponent } from './adicionar/adicionar.component';
+import { AlterarComponent } from './alterar/alterar.component';
+import { BlurComponent } from './blur/blur.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { AdicionarComponent } from './adicionar/adicionar.component';
     MenuComponent,
     EstoqueComponent,
     NavComponent,
-    AdicionarComponent
+    AdicionarComponent,
+    AlterarComponent,
+    BlurComponent
   ],
   imports: [
     BrowserModule

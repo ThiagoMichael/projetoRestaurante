@@ -1,9 +1,10 @@
 section {
 
-  display: none;
+  display: block;
+
 }
 
-div.janela-adicionar {
+div.janela-alterar {
 
   position: absolute;
 	top: 50%;
@@ -37,7 +38,7 @@ p.info {
 
 }
 
-div.form-adicionar {
+div.form-alterar {
 
   display: grid;
   grid-template-columns: 125px 200px;
@@ -57,7 +58,7 @@ label {
 
 }
 
-.form-adicionar > input, select {
+.form-alterar > input, select {
 
   font-size: 18px;
   box-sizing: border-box;
