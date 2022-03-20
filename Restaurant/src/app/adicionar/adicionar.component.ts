@@ -1,3 +1,4 @@
+import { ProdutoService } from './../services/produto.service';
 import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
@@ -7,8 +8,9 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 })
 export class AdicionarComponent {
 
+  constructor (private service: ProdutoService) {}
+
   @Input () exibir: boolean = true
-  @Output() aoAdicionar = new EventEmitter<object>();
   @Output() aoFinalizar = new EventEmitter<boolean>();
 
   nome: String = '';
@@ -17,9 +19,9 @@ export class AdicionarComponent {
   quantidade: number = 0;
   validade: String = "";
 
-  adicionar (): void {
+  adicionar () {
 
-    this.aoAdicionar.emit({
+    const objetoEmitir = {
 
       nome: this.nome,
       descricao: this.descricao,
@@ -27,10 +29,18 @@ export class AdicionarComponent {
       quantidade: this.quantidade,
       validade: this.validade
 
-    });
+    }
 
-    this.limparCampos();
-    this.aoFinalizar.emit(true);
+    this.service.adicionar(objetoEmitir).subscribe(resultado => {
+
+      console.log(resultado);
+      this.limparCampos();
+      this.aoFinalizar.emit(true);
+
+    }, error => {console.error(error);}
+    );
+
+    window.location.reload();
 
   }
 

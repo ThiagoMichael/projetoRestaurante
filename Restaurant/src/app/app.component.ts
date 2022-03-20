@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProdutoService } from './services/produto.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'Restaurant';
-  produtos: object[] = [];
   exibir: boolean = true;
 
-  adicionarProduto($event: object): void {
-
-    const produto = {...$event};
-    this.produtos.push(produto);
-
-  }
+  constructor (private service: ProdutoService) {}
 
   exibirAdicionar ($event: boolean): void {
 
