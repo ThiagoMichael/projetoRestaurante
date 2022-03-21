@@ -8,10 +8,10 @@ import { Component, Output, EventEmitter, Input } from '@angular/core';
 })
 export class AdicionarComponent {
 
+  // Injeção de serviço no componente
   constructor (private service: ProdutoService) {}
 
   @Input () exibir: boolean = true
-  @Output() aoFinalizar = new EventEmitter<boolean>();
 
   nome: String = '';
   descricao: String = '';
@@ -19,7 +19,7 @@ export class AdicionarComponent {
   quantidade: number = 0;
   validade: String = "";
 
-  adicionar () {
+  adicionar (): void {
 
     const objetoEmitir = {
 
@@ -35,10 +35,8 @@ export class AdicionarComponent {
 
       console.log(resultado);
       this.limparCampos();
-      this.aoFinalizar.emit(true);
 
-    }, error => {console.error(error);}
-    );
+    }, error => {console.error(error);});
 
     window.location.reload();
 

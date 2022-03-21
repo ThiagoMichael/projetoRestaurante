@@ -1,28 +1,12 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Leite Integral",
-      "descricao": "bla bla",
-      "quantidade": "120",
-      "genero": "Laticínios",
-      "validade": "2020-11-06T21:34:17.155Z"
-    },
-    {
       "nome": "Leite Integral",
       "descricao": "bla bla",
       "genero": "Laticinios",
       "quantidade": 12,
-      "validade": "2022-03-25",
-      "id": 2
-    },
-    {
-      "nome": "Queijo",
-      "descricao": "bla bla",
-      "genero": "Laticinios",
-      "quantidade": 1,
-      "validade": "2022-03-31",
-      "id": 3
+      "validade": "2022-03-21",
+      "id": 1
     }
   ]
 }

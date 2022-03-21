@@ -9,9 +9,11 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class EstoqueComponent implements OnInit {
 
+  // Injeção de serviço no componente
   constructor (private service: ProdutoService) {}
 
   produtos: any[] = [];
+  exibir: boolean = true;
 
   ngOnInit(): void {
 
@@ -29,6 +31,20 @@ export class EstoqueComponent implements OnInit {
   exibirAdicionar (): void {
 
     this.aoExibirAdd.emit(false);
+
+  }
+
+  modoEditar (): void {
+
+    if (this.exibir == true) {
+
+      this.exibir = false;
+
+    } else {
+
+      this.exibir = true;
+
+    }
 
   }
 

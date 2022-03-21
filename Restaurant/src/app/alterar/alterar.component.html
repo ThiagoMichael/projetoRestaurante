@@ -1,4 +1,5 @@
 <section>
+  <div class="fundo-blur"></div>
   <div class="janela-alterar">
     <h1 class="titulo">Alterar</h1>
     <p class="info">Edite os campos abaixo para alterar as informações do produto.</p>
@@ -13,12 +14,18 @@
               <option value="void"></option>
               <option value="laticinios">Laticínios</option>
             </select>
-            <label for="quantP">Quantidade:</label>
-            <input type="number" name="quantidade" id="quantP">
             <label for="dataP">Validade:</label>
             <input type="date" name="dataValidade" id="dataP">
         </div>
-        <button class="btn-confirmar">Ok</button>
+        <div class="alterar-quantidade">
+          <h3>Quantidade atual</h3>
+          <div class="valor-quantidade">
+            <p>720</p>
+          </div>
+          <button class="btn-quant" id="adicionar">Adicionar</button>
+          <button class="btn-quant" id="retirar">Retirar</button>
+        </div>
+        <button class="btn-confirmar">Salvar</button>
       </form>
   </div>
 </section>

@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'Restaurant';
   exibir: boolean = true;
 
+  // Injeção de serviço no componente
   constructor (private service: ProdutoService) {}
 
   exibirAdicionar ($event: boolean): void {

@@ -4,7 +4,6 @@ main {
   min-height: 545px;
   width: 375px;
   background-color: #E6E6E6;
-  text-align: center;
 
 }
 
@@ -72,7 +71,7 @@ button.botao-pequeno{
 .botao-pequeno:hover #reducedIcon{
 
   color: #00CC00;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 
 }
 
@@ -90,7 +89,7 @@ section.produto {
   background-color: #093902;
   width: 350px;
   border-radius: 5px;
-
+  text-align: center;
   margin-top: 15px;
 
 }
@@ -107,6 +106,29 @@ th#canto { border-radius: 5px 5px 0px 0px; }
 
 td.conteudo { background-color: white; }
 
-td#canto-esquerdo { border-radius: 0px 0px 0px 5px; }
+td#canto-esquerdo { border-bottom-left-radius: 5px; }
 
-td#canto-direito { border-radius: 0px 0px 5px 0px; }
+td#canto-direito { border-bottom-right-radius: 5px; }
+
+div.grid-alter {
+
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+
+}
+
+input#alterCheck {
+
+  width: 20px;
+  height: 18px;
+  border: 1px solid #707070;
+  cursor: pointer;
+
+}
+
+#alterIcon {
+
+  font-size: 19px;
+  cursor: pointer;
+
+}
