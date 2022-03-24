@@ -1,5 +1,5 @@
 import { Produto } from './../models/produto.model';
-import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit} from '@angular/core';
 import { ProdutoService } from '../services/produto.service';
 
 @Component({
@@ -14,6 +14,8 @@ export class EstoqueComponent implements OnInit {
 
   produtos: any[] = [];
   exibir: boolean = true;
+  editarClass: String = "botao-pequeno";
+  editarIcon: String = "fa fa-pencil fa-3x";
 
   ngOnInit(): void {
 
@@ -39,10 +41,14 @@ export class EstoqueComponent implements OnInit {
     if (this.exibir == true) {
 
       this.exibir = false;
+      this.editarClass = "editar";
+      this.editarIcon = "fa fa-times fa-3x";
 
     } else {
 
       this.exibir = true;
+      this.editarClass = "botao-pequeno";
+      this.editarIcon = "fa fa-pencil fa-3x";
 
     }
 

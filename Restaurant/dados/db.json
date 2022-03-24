@@ -7,6 +7,14 @@
       "quantidade": 12,
       "validade": "2022-03-21",
       "id": 1
+    },
+    {
+      "nome": "Queijo",
+      "descricao": "bla bla",
+      "genero": "Laticinios",
+      "quantidade": 15,
+      "validade": "2022-04-08",
+      "id": 2
     }
   ]
 }

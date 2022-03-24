@@ -5,8 +5,8 @@
       <button class="botao-pequeno">
         <i id="reducedIcon" class="fa fa-filter fa-3x" aria-hidden="true"></i>
       </button>
-      <button class="botao-pequeno" (click)="modoEditar()">
-        <i id="reducedIcon" class="fa fa-pencil fa-3x" aria-hidden="true"></i>
+      <button (click)="modoEditar()" [ngClass]="editarClass">
+        <i id="reducedIcon" aria-hidden="true" [ngClass]="editarIcon"></i>
       </button>
       <button class="botao-pequeno" id="adicionar" (click)="exibirAdicionar()">
         <i id="reducedIcon" class="fa fa-plus fa-3x" aria-hidden="true"></i>
@@ -16,6 +16,9 @@
       </button>
     </div>
   </nav>
+  <div class="deletar">
+    <button class="btn-deletar" [hidden]="exibir">Deletar selecionado(s)</button>
+  </div>
   <section class="produto" *ngFor="let produto of produtos">
         <table class="tabela">
           <thead>
