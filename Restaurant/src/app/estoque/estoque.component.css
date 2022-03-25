@@ -128,6 +128,14 @@ button.btn-deletar {
 
 .btn-deletar:active { background-color: #b9b9b9; border-color: #707070; }
 
+button.btn-deletar:disabled {
+
+  background-color: #b9b9b9;
+  border-color: #707070;
+  cursor: not-allowed;
+
+}
+
 section.produto {
 
   background-color: #093902;

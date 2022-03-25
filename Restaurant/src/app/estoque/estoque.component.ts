@@ -16,6 +16,10 @@ export class EstoqueComponent implements OnInit {
   exibir: boolean = true;
   editarClass: String = "botao-pequeno";
   editarIcon: String = "fa fa-pencil fa-3x";
+  disabled: String = "disabled";
+
+  @Output() aoExibirAdd = new EventEmitter<boolean>();
+  @Output() aoEditarPro = new EventEmitter<boolean>();
 
   ngOnInit(): void {
 
@@ -28,11 +32,15 @@ export class EstoqueComponent implements OnInit {
 
   }
 
-  @Output() aoExibirAdd = new EventEmitter<boolean>();
-
   exibirAdicionar (): void {
 
     this.aoExibirAdd.emit(false);
+
+  }
+
+  editarProduto(): void {
+
+    this.aoEditarPro.emit(false);
 
   }
 

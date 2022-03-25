@@ -1,9 +1,11 @@
 <app-menu></app-menu>
 <app-estoque
-  (aoExibirAdd)="exibirAdicionar($event)">
+  (aoExibirAdd)="exibirAdicionar($event)"
+  (aoEditarPro)="exibirEditar($event)">
 </app-estoque>
 <app-nav></app-nav>
 <app-adicionar
-  [exibir] = "exibir">
+  [exibir] = "exibirAdd">
 </app-adicionar>
-<app-alterar></app-alterar>
+<app-alterar
+  [exibir] = "exibirEdi"></app-alterar>

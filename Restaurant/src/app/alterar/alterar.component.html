@@ -1,4 +1,4 @@
-<section>
+<section [hidden]="exibir">
   <div class="fundo-blur"></div>
   <div class="janela-alterar">
     <h1 class="titulo">Alterar</h1>
@@ -6,26 +6,26 @@
       <form action="">
         <div class="form-alterar">
             <label for="nomeP">Nome:</label>
-            <input type="text" name="nome" id="nomeP">
+            <input type="text" name="nome" id="nomeP" [placeholder]="nome">
             <label for="desP">Descrição:</label>
-            <input type="text" name="descricao" id="desP">
+            <input type="text" name="descricao" id="desP" [placeholder]="descricao">
             <label for="generoP">Gênero:</label>
-            <select name="genero" id="generoP">
+            <select name="genero" id="generoP" [value]="genero">
               <option value="void"></option>
               <option value="laticinios">Laticínios</option>
             </select>
             <label for="dataP">Validade:</label>
-            <input type="date" name="dataValidade" id="dataP">
+            <input type="date" name="dataValidade" id="dataP" [placeholder]="validade">
         </div>
         <div class="alterar-quantidade">
           <h3>Quantidade atual</h3>
           <div class="valor-quantidade">
-            <p>720</p>
+            <p>{{quantidade}}</p>
           </div>
           <button class="btn-quant" id="adicionar">Adicionar</button>
           <button class="btn-quant" id="retirar">Retirar</button>
         </div>
-        <button class="btn-confirmar">Salvar</button>
+        <button class="btn-confirmar" type="submit">Salvar</button>
       </form>
   </div>
 </section>

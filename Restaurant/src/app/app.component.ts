@@ -9,14 +9,21 @@ import { ProdutoService } from './services/produto.service';
 export class AppComponent {
 
   title = 'Restaurant';
-  exibir: boolean = true;
+  exibirAdd: boolean = true;
+  exibirEdi: boolean = true;
 
   // Injeção de serviço no componente
   constructor (private service: ProdutoService) {}
 
   exibirAdicionar ($event: boolean): void {
 
-    this.exibir = $event;
+    this.exibirAdd = $event;
+
+  }
+
+  exibirEditar ($event: boolean): void {
+
+    this.exibirEdi = $event;
 
   }
 

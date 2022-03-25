@@ -17,7 +17,7 @@
     </div>
   </nav>
   <div class="deletar">
-    <button class="btn-deletar" [hidden]="exibir">Deletar selecionado(s)</button>
+    <button [disabled]="disabled" class="btn-deletar" [hidden]="exibir">Deletar selecionado(s)</button>
   </div>
   <section class="produto" *ngFor="let produto of produtos">
         <table class="tabela">
@@ -25,7 +25,7 @@
             <th class="cabecalho" id="canto">
               <div class="grid-alter">
                 <div>
-                  <div [hidden]="exibir">
+                  <div [hidden]="exibir" (click)="editarProduto()">
                     <i id="alterIcon" class="fa fa-pencil fa-3x" aria-hidden="true"></i>
                   </div>
                 </div>

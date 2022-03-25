@@ -35,4 +35,10 @@ export class ProdutoService {
 
   }
 
+  deletar (produto: any) {
+
+    return this.httpClient.delete<Produto[]>(this.url, produto);
+
+  }
+
 }
